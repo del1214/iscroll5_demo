@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="cleartype" content="on">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet" href="/css/common.css">
+    <script src="/js/lib/zepto.min.js"></script>
+    <script src="/js/lib/iscroll-probe.js"></script>
+</head>
+
+<body>
+    <div id="indexView" class="container">
+        <div id="header" class="header clearfix">
+            <div class="display-inline-block">
+                header
+            </div>
+        </div>
+        <!-- 
+        横拉的html结构
+        <div class="viewport_h">
+            <div class="wrapper_h">
+                <div class="scroller_h scroller_h_width">
+                    <div class="slide_h">
+                    </div>
+                    <div class="slide_h">
+                    </div>
+                    <div class="slide_h">
+                    </div>
+                    <div class="slide_h">
+                    </div>
+                    <div class="slide_h">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        竖拉的html结构
+        <div class="viewport_v">
+            <div class="wrapper_v">
+                <div class="scroller_v">
+                    <div class="scroller-pullDown">
+                        <div class="margin-width-auto">
+                            <span class="pullDownIcon"></span>
+                            <span class="pullDownLabel">下拉刷新...</span>
+                        </div>
+                    </div>
+                    <div class="scroller_ul">
+                        <div class="scroller_li">
+                        </div>
+                    </div>
+                    <div class="scroller-pullUp">
+                        <div class="margin-width-auto">
+                            <span class="pullUpIcon"></span>
+                            <span class="pullUpLabel">上拉加载...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
+    <div id="viewport_h" class="viewport_h">
+        <div id="indexWrapperH" class="wrapper_h">
+            <div class="scroller_h">
+                <div class="slide_h ">
+                    <div class="viewport_v">
+                        <div class="wrapper_v">
+                            <div class="scroller_v">
+                                <div class="scroller-pullDown">
+                                    <div class="margin-width-auto">
+                                        <span class="pullDownIcon"></span>
+                                        <span class="pullDownLabel">下拉刷新...</span>
+                                    </div>
+                                </div>
+                                <div class="scroller_ul">
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroller-pullUp">
+                                    <div class="margin-width-auto">
+                                        <span class="pullUpIcon"></span>
+                                        <span class="pullUpLabel">上拉加载...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_h ">
+                    <div class="viewport_v">
+                        <div class="wrapper_v">
+                            <div class="scroller_v">
+                                <div class="scroller-pullDown">
+                                    <div class="margin-width-auto">
+                                        <span class="pullDownIcon"></span>
+                                        <span class="pullDownLabel">下拉刷新...</span>
+                                    </div>
+                                </div>
+                                <div class="scroller_ul">
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroller-pullUp">
+                                    <div class="margin-width-auto">
+                                        <span class="pullUpIcon"></span>
+                                        <span class="pullUpLabel">上拉加载...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_h ">
+                    <div class="viewport_v">
+                        <div class="wrapper_v">
+                            <div class="scroller_v">
+                                <div class="scroller-pullDown">
+                                    <div class="margin-width-auto">
+                                        <span class="pullDownIcon"></span>
+                                        <span class="pullDownLabel">下拉刷新...</span>
+                                    </div>
+                                </div>
+                                <div class="scroller_ul">
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroller-pullUp">
+                                    <div class="margin-width-auto">
+                                        <span class="pullUpIcon"></span>
+                                        <span class="pullUpLabel">上拉加载...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_h ">
+                    <div class="viewport_v">
+                        <div class="wrapper_v">
+                            <div class="scroller_v">
+                                <div class="scroller-pullDown">
+                                    <div class="margin-width-auto">
+                                        <span class="pullDownIcon"></span>
+                                        <span class="pullDownLabel">下拉刷新...</span>
+                                    </div>
+                                </div>
+                                <div class="scroller_ul">
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroller-pullUp">
+                                    <div class="margin-width-auto">
+                                        <span class="pullUpIcon"></span>
+                                        <span class="pullUpLabel">上拉加载...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_h ">
+                    <div class="viewport_v">
+                        <div class="wrapper_v">
+                            <div class="scroller_v">
+                                <div class="scroller-pullDown">
+                                    <div class="margin-width-auto">
+                                        <span class="pullDownIcon"></span>
+                                        <span class="pullDownLabel">下拉刷新...</span>
+                                    </div>
+                                </div>
+                                <div class="scroller_ul">
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div><div class="scroller_li">
+                                        <div class="pic">
+                                            <a class="itemList">
+                                                <img src="/img/common/loading_img.gif"  class="pro lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroller-pullUp">
+                                    <div class="margin-width-auto">
+                                        <span class="pullUpIcon"></span>
+                                        <span class="pullUpLabel">上拉加载...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+    $(function(){
+        var height = $(window).height() - 44; //44是上方容器的高度
+        var width = $(window).width();
+        // 此处需要动态的处理滚动条容器的高度宽度
+        $('.viewport_h').css({
+            'height': height,
+            'width': width
+        });
+        $('.wrapper_h').css({
+            'height': height
+        });
+        $('.scroller_h').css({
+            'width': width * 5
+        });
+        $('.slide_h').css({
+            'height': height,
+            'width': width
+        });
+
+
+
+        new IScroll('#indexWrapperH', {
+            scrollX: true,
+            scrollY: false,
+            momentum: false,
+            bounce: false,
+            disableMouse: false,
+            disablePointer: false,
+            snap: true,
+            snapSpeed: 400
+        });
+
+
+        // 下拉刷新
+        function dropTopAction(callback) {
+            setTimeout(callback,3000);
+        }
+
+        // 上拉加载
+        function dropBottomAction(callback) {
+            setTimeout(callback,3000);
+        }
+        var wrapper = $('.wrapper_v'),
+            content = wrapper.find('.scroller_ul');
+        wrapper.each(function(index,item){
+            var $wrapper = $(item),
+                content = $wrapper.find('.scroller_ul');
+            new IScrollLoadData($wrapper[0], content, dropTopAction, dropBottomAction, 30);
+        });
+    });
+
+
+
+    </script>
+</body>
+</html>
