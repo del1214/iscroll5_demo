@@ -1,6 +1,6 @@
 基于iscroll5的横纵混合滚动 上拉下拉请求
 
-Demo http://del1214.duapp.com/github/iscroll5/
+Demo http://dewei.herokuapp.com/github/iscroll5/
 
 
 
